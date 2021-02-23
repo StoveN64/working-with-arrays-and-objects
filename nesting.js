@@ -200,7 +200,7 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
  function looper () {
    numsArr.forEach(arr => {
-    arr.forEach ((num) =>  arr = num % 2 === 0 ? "even" : "odd" )
+    arr.forEach ((num, index) =>  arr[index] = num % 2 === 0 ? "even" : "odd" )
   })
   return numsArr
  } 
